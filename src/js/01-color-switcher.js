@@ -10,8 +10,8 @@ function getRandomHexColor() {
 
 
 buttonStart.addEventListener('click', () => {
-    buttonStart.disable = true;
-    buttonClose.disable = false;
+    buttonStart.disabled = true;
+    buttonClose.disabled = false;
 
     colorInt = setInterval(() => {
         document.body.style.backgroundColor = getRandomHexColor();
@@ -19,7 +19,7 @@ buttonStart.addEventListener('click', () => {
 })
 
 buttonClose.addEventListener('click', () => {
-    buttonStart.disable = false;
-    buttonClose.disable = true;
+    buttonStart.disabled = false;
+    buttonClose.disabled = true;
     clearInterval(colorInt)
 })
