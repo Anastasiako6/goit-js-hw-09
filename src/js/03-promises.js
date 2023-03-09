@@ -7,7 +7,7 @@ const amountElement = document.querySelector('input[name="amount"]')
 const buttonElement = document.querySelector('button[type="submit"]')
 
 function createPromise(position, delay) {
-  const promise = new Promise((resolve, reject) => {
+  return promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       const shouldResolve = Math.random() > 0.3;
        if (shouldResolve) {
@@ -17,7 +17,6 @@ function createPromise(position, delay) {
   }
     })
   })
-  return promise;
 }
 
 buttonElement.addEventListener('click', (element) => {
